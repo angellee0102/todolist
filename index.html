@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<meta name="description" content="This will describe how or what my site is used for"/>
+<meta name="keywords" content="learn, html, css, javascript" />
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="todolist.js"></script>
+<div id="myDIV" class="header">
+  <h2>My To Do List</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+  
+</div>
+
+<ul id="myUL">
+<script src="todolist.js"></script>
+  <li>Hit the gym</li>
+  <li class="checked">Pay bills</li>
+  <li>Reply emails</li>
+  <li>Eat vegetables and fruits</li>
+  <li>Read 10 pages</li>
+  <li>Organize table</li>
+  
+</ul>
+<h3>Total Items: <script>countItems('myUL')</script></h3>
+<span onclick="clearDone()" class="ClearBtn">Clear finished task</span>
